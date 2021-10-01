@@ -7,6 +7,7 @@ from commands import Commands
 folder = ""
 root = "/home/tatan/.todo_tracker/"
 
+#main function which reads the inputted commands
 def run(command):
     if(command=="\\"):
         return 0

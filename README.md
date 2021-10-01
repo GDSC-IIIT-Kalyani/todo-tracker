@@ -1,6 +1,6 @@
 # CUI program to easily add and schedule tasks on the go
 
-This is some simple python code which is linked with a bash script which can be executed by just using a keystroke.
+This is some python code which is linked with a bash script which can be executed by just using a keystroke.
 
 ## **Requirements** :-
 Python 3.\*

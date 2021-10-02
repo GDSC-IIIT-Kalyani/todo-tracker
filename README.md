@@ -6,6 +6,19 @@ This is some python code which is linked with a bash script which can be execute
 - Python 3.\*
 - Ubuntu/Windows
 
+## Setting up
+
+- Please tell me you have an Operating System Installed
+- Install Python from [Python](https://www.python.org)
+
+## Instructions - For all
+
+Run the code with `python main.py`.
+
+## Instructions - For Windows
+
+For windows a batch file is needed, which has not yet been implemented. Please check Issues if you want to work on it.
+
 ## Instructions - For Linux
 
 1. Make run.sh executable with `chmod +x`<br>

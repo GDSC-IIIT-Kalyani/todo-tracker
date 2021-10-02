@@ -8,8 +8,13 @@ This is some python code which is linked with a bash script which can be execute
 
 ## Instructions - For Linux
 
+<<<<<<< HEAD
 1. Make run.sh executable with `chmod +x`
 Run the following line in the terminal of the root directory of install
+=======
+1. Make run.sh executable with `chmod +x`<br>
+Run the following line in the terminal of the root directory of install <br>
+>>>>>>> 432086f6b7facd0e4b6fbdf1acdf3550079e8f3f
 `chmod +x run.sh`
 2. Go to Settings > Keyboard Bindings
 3. Add a new binding of you choice. I use `Alt+/` and put the path of the executable like `path/to/folder/./run.sh` . This will run the code when you press that binding

@@ -10,7 +10,7 @@ Thank you for contributing to us :tada: .
 2. Commit message should be of the stated syntax. Use only absolute verbs like Create, Update, etc and no past or future tenses like creating/created.
 3. Add comments to codes. This increases readability. However do not raise issues or PRs only to add comments.
 4. When naming the functions or variables use meaningful names instead of just random ones. Preferrably, refer to similar files or functions to get an idea.
-5.      Every PR would be reviewed before it gets approved to merge.
+5. Every PR would be reviewed before it gets approved to merge.
 
 ### Ways in which you can contribute
 

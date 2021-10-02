@@ -18,7 +18,8 @@ Thank you for contributing to us :tada: .
 2. Set size of opening window ->   `Level 1`
 3. Add a config file and environment variables -> `Level 2`
 4. Create a new pipenv     ->      `Level 2`
-5. Make the startup faster (for this see the next
+5. Make a batch script so that the program runs easier on windows -> `Level 2`
+6. Make the startup faster (for this see the next sub-heading) - **`Level 3`**
 
 ### Overhauling the whole code
 

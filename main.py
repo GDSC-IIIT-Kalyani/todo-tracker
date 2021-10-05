@@ -5,7 +5,7 @@ from commands import Commands
 
 
 folder = ""
-root = "/home/tatan/.todo_tracker/"
+root = "~/.todo_tracker/"
 
 #main function which reads the inputted commands
 def run(command):

@@ -25,7 +25,7 @@ For windows a batch file is needed, which has not yet been implemented. Please c
 Run the following line in the terminal of the root directory of install <br>
 `chmod +x install.sh`
 2. Run `./install.sh`
-3. Two new files called run.sh and config.py will be generated. Note the path of run.sh
+3. Two new files called `run.sh` and `config.py` will be generated. Note the path of run.sh
 4. Go to Settings > Keyboard Bindings
 5. Add a new binding of you choice. I use `Alt+/` and put the path of the executable like `path/to/folder/./run.sh` . This will run the code when you press that binding
 

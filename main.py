@@ -2,10 +2,11 @@
 
 import os
 from commands import Commands
-
+import traceback
+from config import *
 
 folder = ""
-root = "~/.todo_tracker/"
+root = TODO_STORE_DIR + "/"
 
 #main function which reads the inputted commands
 def run(command):
@@ -13,7 +14,7 @@ def run(command):
         return 0
     
     args = command.split()
-    
+
     command_handler = Commands(root, args[1:])
     commands = command_handler.get_dict()
 

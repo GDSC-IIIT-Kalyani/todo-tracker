@@ -2,10 +2,11 @@
 
 import os
 from commands import Commands
-
+import traceback
+from config import *
 
 folder = ""
-root = os.environ['TODO_STORE_DIR']+"/"
+root = TODO_STORE_DIR + "/"
 
 #main function which reads the inputted commands
 def run(command):
@@ -14,7 +15,6 @@ def run(command):
     
     args = command.split()
 
-    print(root)
     command_handler = Commands(root, args[1:])
     commands = command_handler.get_dict()
 

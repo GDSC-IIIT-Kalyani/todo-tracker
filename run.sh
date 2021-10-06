@@ -1,1 +1,1 @@
-gnome-terminal --geometry=20x20 -- /home/tatan/Desktop/Tests/todo_tracker/main.py
+gnome-terminal --working-directory=/home/tatan/Desktop/Tests/todo_tracker --geometry=50x20 -x bash -c "./main.py"

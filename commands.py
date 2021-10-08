@@ -50,7 +50,6 @@ class Commands:
 
     def show(self):
         self.load_data()
-        print(self.dat)
         for i in range(len(self.dat)):
             print(str(len(self.dat)-i) + " -> " + self.dat[len(self.dat)-i-1])
 

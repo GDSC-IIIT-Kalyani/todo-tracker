@@ -55,7 +55,7 @@ class Commands:
 
     def delete(self):
         self.load_data()
-        del self.dat[len(self.dat)-self.del_in-1]
+        del self.dat[self.del_in-1]
         pickle.dump(self.dat, open(self.path+"/dat", "wb"))
         self.show()
 

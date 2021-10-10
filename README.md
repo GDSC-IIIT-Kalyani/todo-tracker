@@ -21,7 +21,7 @@ For windows a batch file is needed, which has not yet been implemented. Please c
 
 ## Instructions - For Linux
 
-1. Make run.sh executable with `chmod +x`<br>
+1. Make install.sh executable with `chmod +x`<br>
 Run the following line in the terminal of the root directory of install <br>
 `chmod +x install.sh`
 2. Run `./install.sh`

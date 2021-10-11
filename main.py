@@ -82,4 +82,5 @@ elif args.purge:
 elif args.show:
     command = 'show'
 
+print("%s %s"%(command, data))
 run("%s %s"%(command, data))

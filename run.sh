@@ -1,5 +1,5 @@
 while IFS="" read -r -e -d $'\n' -p '>> ' line; do 
-   ./main.py 
+    eval python main.py "--$line"
    history -s "$line"
 done
 

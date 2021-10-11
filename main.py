@@ -20,17 +20,19 @@ parser.add_argument('--store',
         help = 'Stores an entry',
         )
 
-parser.add_argument('--del',
+parser.add_argument('--delete',
         action = 'store',
         type = int,
         help = 'Deletes an entry wrt its index'
         )
 
 parser.add_argument('--show',
+        action = 'store_true',
         help = 'Shows Entries'
         )
 
 parser.add_argument('--purge',
+        action = 'store_true',
         help = 'Deletes all entries'
         )
 
@@ -53,16 +55,31 @@ def run(command):
         print("This command doesnt exist, try these : \n"+"\n".join(commands.keys()))
         return 1;
 
-root+='debug'
 
+
+root+='debug'
 if folder == 'todo':
     is_todo = 1
-
 if not os.path.exists(root):
     os.makedirs(root)
 
-args = parser.parse_args()
-command = args.store
 
-print(command)
-#run("%s %s"%(command, data))
+
+args, leftovers = parser.parse_known_args()
+command = ''
+data = ''
+if args.store is not None:
+    command = 'store'
+    data = " ".join(args.store)
+
+elif args.delete is not None:
+    command = 'delete'
+    data = args.delete
+
+elif args.purge:
+    command = 'purge'
+
+elif args.show:
+    command = 'show'
+
+run("%s %s"%(command, data))

@@ -17,5 +17,6 @@ else
     echo "TODO_STORE_DIR='/home/$(whoami)/.todo_tracker'" >> ./config.py
 fi
 
-echo "gnome-terminal --working-directory=$CURRDIR --geometry=50x20 -x bash -c \"./main.py\"" > run.sh
+echo "gnome-terminal --working-directory=$CURRDIR --geometry=50x20 -x bash -c \"./run.sh\"" > open_terminal.sh
+chmod +x open_terminal.sh
 chmod +x run.sh

@@ -1,1 +1,5 @@
-gnome-terminal --working-directory=/home/tatan/Desktop/Tests/todo_tracker --geometry=50x20 -x bash -c "./main.py"
+while IFS="" read -r -e -d $'\n' -p '>> ' line; do 
+   eval python3 main.py "--$line"
+   history -s "$line"
+done
+

@@ -17,12 +17,13 @@ class Commands:
         self.commands["store"] = self.store
         self.commands["purge"] = self.purge
         self.commands["show"] = self.show
-        self.commands["del"]=self.delete
+        self.commands["delete"]=self.delete
 
     def load_data(self):
         try:
             self.dat = pickle.load(open(self.path+"/dat", "rb"))
-        except:
+        except Exception as e:
+            print(e)
             self.dat = []
             pickle.dump(self.dat,open(self.path+"/dat", "wb"))
 

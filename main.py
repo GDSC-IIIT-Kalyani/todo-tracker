@@ -57,7 +57,7 @@ def run(command):
 
 
 
-root+='debug'
+root+='todo'
 if folder == 'todo':
     is_todo = 1
 if not os.path.exists(root):
@@ -82,5 +82,4 @@ elif args.purge:
 elif args.show:
     command = 'show'
 
-print("%s %s"%(command, data))
 run("%s %s"%(command, data))

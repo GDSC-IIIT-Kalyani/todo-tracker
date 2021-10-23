@@ -1,1 +1,1 @@
-gnome-terminal --working-directory=/home/tatan/Desktop/Tests/todo_tracker --geometry=50x20 -- bash -c "./run.sh"
+x-terminal-emulator --working-directory=/home/vineel/todo-tracker --geometry=50x20 -x bash -c "./run.sh"

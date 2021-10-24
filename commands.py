@@ -1,4 +1,5 @@
 import pickle
+import os
 
 class Commands:
 
@@ -21,7 +22,11 @@ class Commands:
 
     def load_data(self):
         try:
-            self.dat = pickle.load(open(self.path+"/dat", "rb"))
+            if os.path.isfile(self.path+"/dat"):
+                self.dat = pickle.load(open(self.path+"/dat", "rb"))
+            else:
+                self.dat = []
+                pickle.dump(self.dat,open(self.path+"/dat", "wb"))
         except Exception as e:
             print(e)
             self.dat = []
@@ -51,8 +56,11 @@ class Commands:
 
     def show(self):
         self.load_data()
-        for i in range(len(self.dat)):
-            print(str(len(self.dat)-i) + " -> " + self.dat[len(self.dat)-i-1])
+        if len(self.dat) == 0:
+            print("Empty!")
+        else:
+            for i in range(len(self.dat)):
+                print(str(len(self.dat)-i) + " -> " + self.dat[len(self.dat)-i-1])
 
     def delete(self):
         self.load_data()

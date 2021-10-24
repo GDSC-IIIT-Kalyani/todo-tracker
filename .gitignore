@@ -4,3 +4,4 @@ todo/
 env/
 *.pyc
 config.py
+open_terminal.sh

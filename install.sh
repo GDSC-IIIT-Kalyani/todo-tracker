@@ -1,10 +1,8 @@
 CURRDIR=$(pwd)
 echo $CURRDIR
 
-if [ -d "config.py" ]
+if [ ! -f "config.py" ]
 then
-    continue
-else
     touch config.py
 fi
 
@@ -13,10 +11,8 @@ then
     echo "Env variable found"
 else
     echo "Adding env variable to bash file"
-    if [ -d "config.py" ]
-    then
-        rm config.py
-    fi
+    rm config.py
+    touch config.py
     echo "TODO_DIR='${CURRDIR}'" >> ./config.py
 fi
 

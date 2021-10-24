@@ -24,6 +24,6 @@ else
     echo "TODO_STORE_DIR='/home/$(whoami)/.todo_tracker'" >> ./config.py
 fi
 
-echo "x-terminal-emulator --working-directory=$CURRDIR --geometry=50x20 -e 'bash -c \"./run.sh\"'" > open_terminal.sh
+echo "x-terminal-emulator --working-directory=$CURRDIR --geometry=50x20 -e 'bash -c \"cd $CURRDIR; ./run.sh\"'" > open_terminal.sh
 chmod +x open_terminal.sh
 chmod +x run.sh

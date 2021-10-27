@@ -36,6 +36,11 @@ parser.add_argument('--purge',
         help = 'Deletes all entries'
         )
 
+parser.add_argument('--exit',
+        action = 'store_true',
+        help = 'Exits the application'
+        )
+
 #--
 
 

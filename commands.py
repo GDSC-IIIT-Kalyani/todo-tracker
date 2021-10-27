@@ -19,6 +19,10 @@ class Commands:
         self.commands["purge"] = self.purge
         self.commands["show"] = self.show
         self.commands["delete"]=self.delete
+        self.commands["exit"] = self.exit
+
+    def exit(self):
+        exit()
 
     def load_data(self):
         try:

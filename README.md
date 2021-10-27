@@ -43,3 +43,5 @@ Currently available commands are
 2. delete
 3. purge
 4. show
+5. help
+6. quit

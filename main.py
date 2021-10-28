@@ -36,6 +36,11 @@ parser.add_argument('--purge',
         help = 'Deletes all entries'
         )
 
+parser.add_argument('--exit',
+        action = 'store_true',
+        help = 'Exits the application'
+        )
+
 parser.add_argument('--search',
         action = 'store_true',
         help = 'Searches an entry'
@@ -90,4 +95,3 @@ elif args.search:
     command = 'search'
 
 run("%s %s"%(command, data))
-

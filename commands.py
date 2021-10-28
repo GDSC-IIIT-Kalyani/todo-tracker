@@ -19,10 +19,7 @@ class Commands:
         self.commands["purge"] = self.purge
         self.commands["show"] = self.show
         self.commands["delete"]=self.delete
-        self.commands["exit"] = self.exit
-
-    def exit(self):
-        exit()
+        self.commands["search"] = self.search
 
     def load_data(self):
         try:
@@ -72,7 +69,20 @@ class Commands:
         pickle.dump(self.dat, open(self.path+"/dat", "wb"))
         self.show()
 
+    def search(self):
+        self.load_data()
+
+        que = input("Enter query : ")
+        j, k = 0, 0
+
+        for i in range(len(self.dat)):
+            word = self.dat[len(self.dat)-i-1]
+            if word.find(que) != -1:
+                j += 1
+                print(str(len(self.dat) - i) + " -> " + word, end = "\n")
+            
+        if j == 0:
+            print("No matches found !!")
+
     def get_dict(self):
         return self.commands
-
-   

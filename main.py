@@ -42,7 +42,8 @@ parser.add_argument('--exit',
         )
 
 parser.add_argument('--search',
-        action = 'store_true',
+        '--data',
+        nargs = '+',
         help = 'Searches an entry'
         )
 #--
@@ -91,7 +92,8 @@ elif args.purge:
 elif args.show:
     command = 'show'
 
-elif args.search:
+elif args.search is not None:
     command = 'search'
+    data = " ".join(args.search)
 
 run("%s %s"%(command, data))

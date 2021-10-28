@@ -6,7 +6,8 @@ echo 1. store
 echo 2. delete
 echo 3. purge
 echo 4. show
-echo 5. quit
+echo 5. search
+echo 6. quit
 
 :while
 echo. 

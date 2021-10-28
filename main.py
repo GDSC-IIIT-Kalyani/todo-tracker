@@ -41,6 +41,11 @@ parser.add_argument('--exit',
         help = 'Exits the application'
         )
 
+parser.add_argument('--search',
+        '--data',
+        nargs = '+',
+        help = 'Searches an entry'
+        )
 #--
 
 
@@ -86,5 +91,9 @@ elif args.purge:
 
 elif args.show:
     command = 'show'
+
+elif args.search is not None:
+    command = 'search'
+    data = " ".join(args.search)
 
 run("%s %s"%(command, data))

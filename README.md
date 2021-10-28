@@ -21,7 +21,7 @@ Run the code with `python main.py --command` where c`--command` is one of the av
 1. Go to the git-bash or command prompt.
 2. Run the following command at the root directory of this application `./install.sh`.
 3. Two new files called `open_terminal` and `config.py` will be generated.
-4. Then run command `cmd "\C batch_file.bat"`. Now you can use todo-tracker.
+4. Then run command `cmd "\C run_todo.bat"`. Now you can use todo-tracker.
 5. To create keyboard bindings. Right click on batch_file.bat file Then click on create shortcut.
 6. After shortcut created. Then Go to properties you can see shortcut keys. you can use like `alt + ctrl + n`. keyboard shortcut is created.
 

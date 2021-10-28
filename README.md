@@ -44,4 +44,5 @@ Currently available commands are
 3. purge
 4. show
 5. help
-6. quit
+6. search
+7. quit

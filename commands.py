@@ -20,6 +20,11 @@ class Commands:
         self.commands["show"] = self.show
         self.commands["delete"]=self.delete
         self.commands["search"] = self.search
+        self.commands["exit"] = self.exit
+
+    def exit(self):
+        exit()
+
 
     def load_data(self):
         try:

@@ -77,8 +77,8 @@ class Commands:
     def search(self):
         self.load_data()
 
-        que = input("Enter query : ")
-        j, k = 0, 0
+        que =  " ".join(self.task)
+        j = 0
 
         for i in range(len(self.dat)):
             word = self.dat[len(self.dat)-i-1]

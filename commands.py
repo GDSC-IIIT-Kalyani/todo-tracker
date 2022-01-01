@@ -21,6 +21,7 @@ class Commands:
         self.commands["delete"]=self.delete
         self.commands["search"] = self.search
         self.commands["exit"] = self.exit
+        self.commands["cd"] = self.cd
 
     def exit(self):
         exit()
@@ -91,3 +92,14 @@ class Commands:
 
     def get_dict(self):
         return self.commands
+
+    def cd(self):
+        self.load_data()
+        os.system("echo -n %s > curr_dir"%self.task[0])
+
+    def ls(self):
+        self.load_data()
+        dirs = os.listdir()
+        dirs.remove('debug')
+        dirs.remove('dummy')
+        print("\n".join(dirs))

@@ -46,6 +46,18 @@ parser.add_argument('--search',
         nargs = '+',
         help = 'Searches an entry'
         )
+
+parser.add_argument('--cd',
+        action='store',
+        nargs = '+',
+        help = 'Changes subject/directory'
+        )
+
+parser.add_argument('--ls',
+                    action = 'store_true',
+                    help='Displays existing folders'
+                    )
+                    
 #--
 
 
@@ -66,8 +78,8 @@ def run(command):
         return 1;
 
 
-
-root+='todo'
+subject=os.popen("cat curr_dir").read()
+root+=subject
 if folder == 'todo':
     is_todo = 1
 if not os.path.exists(root):
@@ -95,5 +107,12 @@ elif args.show:
 elif args.search is not None:
     command = 'search'
     data = " ".join(args.search)
+
+elif args.cd is not None:
+    command = 'cd'
+    data = args.cd[0]
+
+elif args.ls:
+    command = 'ls'
 
 run("%s %s"%(command, data))

@@ -22,6 +22,7 @@ class Commands:
         self.commands["search"] = self.search
         self.commands["exit"] = self.exit
         self.commands["cd"] = self.cd
+        self.commands["ls"] = self.ls
 
     def exit(self):
         exit()

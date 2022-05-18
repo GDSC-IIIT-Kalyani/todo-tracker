@@ -102,8 +102,10 @@ class Commands:
         self.load_data()
         dirs = os.listdir(self.path+"/../")
         curr_dir = self.path.split('/')[-1]
-        dirs.remove('debug')
-        dirs.remove('dummy')
+        if 'debug' in dirs:
+            dirs.remove('debug')
+        if 'dummy' in dirs:
+            dirs.remove('dummy')
         for dir in dirs:
             if dir == curr_dir:
                 print(dir+" <---- curr")

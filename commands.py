@@ -100,7 +100,12 @@ class Commands:
 
     def ls(self):
         self.load_data()
-        dirs = os.listdir()
+        dirs = os.listdir(self.path+"/../")
+        curr_dir = self.path.split('/')[-1]
         dirs.remove('debug')
         dirs.remove('dummy')
-        print("\n".join(dirs))
+        for dir in dirs:
+            if dir == curr_dir:
+                print(dir+" <---- curr")
+            else:
+                print(dir)
